@@ -132,8 +132,7 @@ jobs:
           - "2.7"
           - "3.0"
     docker:
-      # Although the Golang is not necessary, the CircleCI official image is used for fast downloading.
-      - image: circleci/golang
+      - image: cimg/base:stable
         environment:
           CIRCLE_ARTIFACTS: "/tmp/ruby-<< parameters.version >>-rpm"
     working_directory: ~/ruby-rpm
@@ -161,8 +160,7 @@ jobs:
 
   update:
     docker:
-      # Although the Golang is not necessary, the CircleCI official image is used for fast downloading.
-      - image: circleci/golang
+      - image: cimg/base:stable
     working_directory: ~/ruby-rpm
     steps:
       - checkout
