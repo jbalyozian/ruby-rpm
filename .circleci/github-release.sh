@@ -38,6 +38,9 @@ $HOME/bin/github-release release \
   --description "not release" \
   --target master
 
+# Wait a few seconds after create release to avoid to error `could not find the release corresponding to tag ...`.
+sleep 5
+
 #
 # Upload rpm files and build a release note
 #
