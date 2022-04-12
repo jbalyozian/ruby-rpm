@@ -10,8 +10,8 @@ need_to_release() {
 }
 
 get_github_release() {
-  version=v0.7.5
-  wget https://github.com/meterup/github-release/releases/download/${version}/linux-amd64-github-release.bz2
+  version=v0.10.0
+  wget https://github.com/github-release/github-release/releases/download/${version}/linux-amd64-github-release.bz2
   bzip2 -d linux-amd64-github-release.bz2
   chmod +x linux-amd64-github-release
   mkdir -p $HOME/bin
