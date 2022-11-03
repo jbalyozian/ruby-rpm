@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 
-* Thu Nov 3 2022 feedforce tech team <jbalyozian@onedoor.com> - 3.1.0
+* Thu Nov 3 2022 John Balyozian <jbalyozian@onedoor.com> - 3.1.0
 - update ruby version to 3.1.0
 
 * Tue Apr 12 2022 feedforce tech team <technical_staff@feedforce.jp> - 3.0.4
